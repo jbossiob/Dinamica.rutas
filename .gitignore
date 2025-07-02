@@ -1,0 +1,35 @@
+# Entorno virtual
+venv/
+ENV/
+.env
+.env.*
+
+# Archivos de configuración sensibles
+db.sqlite3
+*.pyc
+__pycache__/
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Archivos de salida y generados
+rutas_hotel_melia_lima.html
+rutas_sunass.html
+
+# Archivos de backup y dumps
+*.dump
+
+# Archivos de sistema
+Thumbs.db
+.idea/
+.vscode/
+
+# Node/npm
+node_modules/
+package-lock.json
+
+# Otros
+static/*.bak 
