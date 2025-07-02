@@ -13,6 +13,14 @@ DB_CONFIG = {
 
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
+# Configuración para el servicio de mapas
+MAP_CONFIG = {
+    "sheetdb_url": os.getenv("API_SHEET_URL"),
+    "hotel_melia_lima_coords": (-12.0926987, -77.0552319),
+    "distancia_agrupamiento_km": 0.5,
+    "earth_radius_km": 6371.0
+}
+
 # Configuración de CORS desde variables de entorno
 def get_cors_origins():
     """Retorna los orígenes permitidos desde variables de entorno"""

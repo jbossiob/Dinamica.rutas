@@ -15,7 +15,7 @@ if __name__ == "__main__":
         reload = False
         log_level = "info"
     else:
-        # Configuración para desarrollo
+        # Configuración para desarrollo local
         host = os.getenv("HOST", "127.0.0.1")  # Solo conexiones locales
         port = int(os.getenv("PORT", "8000"))
         reload = True
@@ -24,6 +24,8 @@ if __name__ == "__main__":
     print(f"🚀 Iniciando servidor en modo: {environment}")
     print(f"📍 Host: {host}")
     print(f"🔌 Puerto: {port}")
+    print(f"🔄 Auto-reload: {'Activado' if reload else 'Desactivado'}")
+    print(f"📝 Nivel de log: {log_level}")
     
     uvicorn.run(
         "app.main:app", 
